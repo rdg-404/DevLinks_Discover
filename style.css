@@ -1,17 +1,33 @@
 body {
   background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
 }
 
 #container {
   width: 360px;
   height: 712px;
 
-  border: 1px solid red;
+  margin: 0 auto;
+}
+
+#profile {
+  width: 112px;
+  gap: 16px;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
   margin: 0 auto;
 }
 
 #profile img {
-  display: block;
   width: 112px;
-  margin: 0 auto;
+  border-radius: 100%;
+}
+
+#profile a {
+  text-decoration: none;
+  color: #fff;
 }
