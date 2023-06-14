@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
   font-family: 'Inter', sans-serif;
