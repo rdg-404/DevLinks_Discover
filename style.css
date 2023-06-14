@@ -41,6 +41,9 @@ body {
 ul {
   margin-top: 32px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 ul li a {
@@ -48,5 +51,15 @@ ul li a {
   justify-content: center;
   align-items: center;
 
+  text-decoration: none;
+  color: #fff;
+
   padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
