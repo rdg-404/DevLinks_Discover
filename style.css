@@ -6,6 +6,7 @@
 
 body {
   background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
+  height: 100vh;
   font-family: 'Inter', sans-serif;
   color: #fff;
 }
