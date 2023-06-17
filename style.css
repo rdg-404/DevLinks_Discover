@@ -8,11 +8,18 @@
   --text-color: #fff;
   --link-color: #8257e6;
   --bg-url: url(./assets/bg-mobile-dark.jpg);
+  --social-border-color: rgba(255, 255, 255, 0.2);
+  --link-background-color: rgba(255, 255, 255, 0.1);
+  --link-background-color-hover: rgba(255, 255, 255, 0.05);
 }
 
 .light {
   --text-color: #000;
   --bg-url: url(./assets/bg-mobile-light.jpg);
+  --border-color: rgba(0, 0, 0, 0.2);
+  --social-border-color: rgba(0, 0, 0, 0.1);
+  --link-background-color: rgba(0, 0, 0, 0.06);
+  --link-background-color-hover: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -76,8 +83,9 @@ ul li a {
 
   padding: 16px 24px;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--link-background-color);
   border-radius: 8px;
+  border: 1px solid var(--border-color);
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -86,7 +94,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--link-background-color-hover);
   color: var(--link-color);
 }
 
@@ -114,7 +122,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--social-border-color);
   color: var(--link-color);
 }
 
