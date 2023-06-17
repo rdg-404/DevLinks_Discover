@@ -58,6 +58,7 @@ body {
 #profile a {
   text-decoration: none;
   color: var(--text-color);
+  margin-bottom: 16px;
 }
 
 #profile a:hover {
@@ -66,16 +67,22 @@ body {
 
 #switch {
   position: relative;
+  width: 64px;
+
+  margin: 8px auto;
 }
 
 #switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-color) no-repeat center;
-  border: 0;
+  border: 1px solid var(--border-color);
   border-radius: 50%;
 
   position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
