@@ -72,6 +72,17 @@ body {
   border-radius: 50%;
 }
 
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--link-background-color);
+  border: 1px solid var(--border-color);
+  backdrop: blur(4px);
+  --webkit-backdrop-filter: blur(4px);
+  border-radius: 99999px;
+}
+
 ul {
   margin-top: 32px;
   list-style: none;
