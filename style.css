@@ -11,6 +11,7 @@
   --social-border-color: rgba(255, 255, 255, 0.2);
   --link-background-color: rgba(255, 255, 255, 0.1);
   --link-background-color-hover: rgba(255, 255, 255, 0.05);
+  --switch-bg-color: url(./assets/moon-stars.svg);
 }
 
 .light {
@@ -20,6 +21,7 @@
   --social-border-color: rgba(0, 0, 0, 0.1);
   --link-background-color: rgba(0, 0, 0, 0.06);
   --link-background-color-hover: rgba(0, 0, 0, 0.1);
+  --switch-bg-color: url(./assets/sun.svg);
 }
 
 body {
