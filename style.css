@@ -85,11 +85,12 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+
+  animation: switch-bg-dark 0.2s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: switch-bg-light 0.2s forwards;
 }
 
 #switch span {
@@ -189,5 +190,23 @@ footer a:hover {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes switch-bg-light {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes switch-bg-dark {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
